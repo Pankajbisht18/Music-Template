@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background-color: #000;
+}
+.navbar1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    width: 80%;
+    margin: auto;   
+}
+.hamburger{
+    display: none;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+.nav-menu1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item1{
+    margin-left: 5rem;
+    padding-top: 10px;
+}
+.nav-link1{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+}
+.nav-link1:hover{
+    background: -webkit-linear-gradient(#883AFC,#548AF1); background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.users{
+    background-image: linear-gradient(#6325E1,#B44DE7);
+    padding: 10px 13px;
+    border-radius: 50%;
+}
+.header-section{
+    background-color: #09060E;
+    height: 100vh;
+}
+.welcome-to-sonority{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+    color: #fff;
+    height: 95vh;
+}
+.welcome h1{
+    font-size: 80px;
+    text-transform: uppercase;
+}
+.welcome span {
+    background: -webkit-linear-gradient(#fff,#D474FF); background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.welcome p{
+    color: #7B777E;
+    font-size: 18px;
+}
+.welcome button{
+    background-image: linear-gradient(to right,#883AFC,#548AF1);
+    padding: 10px;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.options p{
+    width: 300px;
+    border: 1px solid #9032CC;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.my-track{
+    background-color: #09060E;
+}
+.track-head{
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; 
+    width: 75%;
+    margin: auto;
+}
+.track-head h1 {
+    color:#fff; 
+    font-size:50px;
+}
+.track-head h2 {
+    color:#fff; 
+    font-size:30px;
+}
+.track{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    margin-top: 80px;
+}
+.card-body{
+    margin-top: -25px;
+}
+.card{
+    margin: 0 10px 0 10px;
+    width: 300px;
+}
+.turn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10%;
+}
+.turn p {
+    color: #E497EF;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.turn h5 {
+    color: #DBDBDB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1450px){
+    .track{
+        width: 100%;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
+@media only screen and (max-width: 1450px){
+    .track{
+        justify-content: center;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+}
+@media only screen and (max-width: 1250px) {
+    .welcome-to-sonority{
+        flex-direction: column;
+        padding-top: 100px;
+        width: 90%;
+        text-align: center;
+    }
+    .options{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .nav-menu1{
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #09060E;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+    }
+    .nav-menu1.active{
+        left: 0;
+    }
+    .nav-item1{
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .welcome-to-sonority{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 950px){
+    .track{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 650px){
+    .track{
+        width: 100%;
+    }
+    .my-track{
+        height: 100vh;
+    }
+    .turn-section{
+        padding-top: 750px;
+    }
+    .track-head{
+        padding-top: 120px;
+    }
+    .turn-img{
+        width: 450px;
+    }
+}
+@media only screen and (max-width: 572px){
+    .welcome h1{
+        font-size: 60px;
+    }
+    .track-head{
+        padding-top: 100px;
+    }
+    .track-head h1{
+        font-size: 30px;
+    }
+    .track-head h2 {
+        font-size: 20px;
+    }
+    
+}
+@media only screen and (max-width: 550px) {
+    .turn-section{
+        padding-top: 850px;
+    }
+    .turn{
+        padding-left: 10px;
+    }
+    .navbar1{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 540px){
+    .my-track{
+        padding-top: 150px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .turn-img{
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 411px){
+    .my-track{
+        padding-top: 150px;
+    }
+}
+@media only screen and (max-width: 414px){
+    .my-track{
+        padding-top: 150px;
+    }
+}
+@media only screen and (max-width: 380px){
+    .welcome h1{
+        font-size: 40px;
+    }
+    .track-head{    
+        flex-direction: column;
+    }
+    .turn-img{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 360px){
+    .my-track{
+        padding-top: 150px;
+    }
+}
+@media only screen and (max-width: 325px){
+    .turn-section{
+        padding-top: 1350px;
+    }
+    .my-track{
+        padding-top: 300px;
+    }
+}
+@media only screen and (max-width: 280px){
+    .options p{
+        width: 250px;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .turn-img{
+        width: 250px;
+    }
+}
